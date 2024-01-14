@@ -1,2 +1,2 @@
 # Open-Ai-library-based-bot
-Its a bot whos main function is to chat using open ai's python library and act as a assistant
+It's a bot whose main function is to chat using Open AI's python library and act as an assistant
