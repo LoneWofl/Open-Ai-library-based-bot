@@ -83,11 +83,15 @@ if __name__ == '__main__':
                 say(f"Opening {site[0]} sir...")
                 webbrowser.open(site[1])
 
+             
         if "the time" in query:
             hour = datetime.datetime.now().strftime("%H")
             min = datetime.datetime.now().strftime("%M")
             say(f"Sir time is {hour} and {min} minutes")
 
+    '''elif "open 'add application' ".lower() in query.lower():
+            os.system(f"Add location to a the mentioned application")'''
+        
         elif "open chrome".lower() in query.lower():
             os.system(f"start C:\Program Files\Google\Chrome\Application\chrome.exe")
 
@@ -106,22 +110,6 @@ if __name__ == '__main__':
         else:
             print("Chatting...")
             chat(query)
-
-
-
-
-
-while 1:
-    print("Enter statement ")
-    s=input()
-    speaker.Speak(s)
-    print("listening.....")
-    query= takeCommand()
-    sites=[["youtube","https://www.youtube.com/"], ["wikipedia","https://www.wikipedia.com"], ["google","https://www.google.com"]]
-    for site in sites:
-         if f"Open {site[0]}".lower() in query.lower():
-             say(f"Opening {site[0]} sir...")
-             webbrowser.open(site[1])
 
 
 
