@@ -113,7 +113,3 @@ if __name__ == '__main__':
 
 
 
-    if "the time" in query:
-        hour= datetime.datetime.now().strftime("%H")
-        min= datetime.datetime.now().strftime("%M")
-        say(f"The time is {hour} hours and {min} minutes")
